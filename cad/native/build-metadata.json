@@ -1,0 +1,308 @@
+{
+  "cad_software": "CadQuery 2.8.0",
+  "cad_kernel": "OpenCascade 7.9.3.1",
+  "dxf_reader": "ezdxf 1.4.4",
+  "step_protocol_requested": "AP214",
+  "step_schema_setting": "AP214IS",
+  "model_units": "millimeter",
+  "source_profile_units": "inch",
+  "thickness_in": 0.135,
+  "thickness_mm": 3.429,
+  "parts": {
+    "WT-001_BASE": {
+      "source": "laser/dxf-parts/WT-001_BASE.dxf",
+      "source_sha256": "94506f8cbb3f6fbb521739a0dc5ba51e9d02583e8648886729c5c79aff1f6a47",
+      "exact_duplicate_cut_lines_removed_in_memory": 0,
+      "closed_cut_contours": 12,
+      "solid_count": 1,
+      "volume_mm3": 306615.3689773433,
+      "bounding_mm": [
+        304.79999999999995,
+        304.79999999999995,
+        3.429
+      ]
+    },
+    "WT-002_SPINE": {
+      "source": "laser/dxf-parts/WT-002_SPINE.dxf",
+      "source_sha256": "56dad3eb2f0a7aec4d932c4aeefe511401ec9cfbaf8b18bd2d912de9a12c51a2",
+      "exact_duplicate_cut_lines_removed_in_memory": 0,
+      "closed_cut_contours": 2,
+      "solid_count": 1,
+      "volume_mm3": 91144.849968,
+      "bounding_mm": [
+        254.0,
+        114.3,
+        3.429
+      ]
+    },
+    "WT-003_CROSS": {
+      "source": "laser/dxf-parts/WT-003_CROSS.dxf",
+      "source_sha256": "ef9ff9d16b660b72d2a99891ceadc2485f18e411eaf219434c144c22c47f1682",
+      "exact_duplicate_cut_lines_removed_in_memory": 0,
+      "closed_cut_contours": 2,
+      "solid_count": 1,
+      "volume_mm3": 91144.84996799997,
+      "bounding_mm": [
+        254.0,
+        114.3,
+        3.429
+      ]
+    },
+    "WT-004_VERTICAL": {
+      "source": "laser/dxf-parts/WT-004_VERTICAL.dxf",
+      "source_sha256": "f028c227fdc7a1e5e4c68bdd618ad1b7b66495f6de796e6c71ee0cc6138a8b2f",
+      "exact_duplicate_cut_lines_removed_in_memory": 0,
+      "closed_cut_contours": 1,
+      "solid_count": 1,
+      "volume_mm3": 40926.69233999999,
+      "bounding_mm": [
+        76.19999999999999,
+        165.09999999999997,
+        3.429
+      ]
+    },
+    "WT-005_CORNER_A": {
+      "source": "laser/dxf-parts/WT-005_CORNER_A.dxf",
+      "source_sha256": "053ef0dd6d4191b76796d05a9d615cd0e51002a062d65c509970d9e86f8f03eb",
+      "exact_duplicate_cut_lines_removed_in_memory": 0,
+      "closed_cut_contours": 2,
+      "solid_count": 1,
+      "volume_mm3": 26823.575384999993,
+      "bounding_mm": [
+        76.2,
+        114.3,
+        3.429
+      ]
+    },
+    "WT-006_CORNER_B": {
+      "source": "laser/dxf-parts/WT-006_CORNER_B.dxf",
+      "source_sha256": "533ac46ca9823793fd8a0b96d5e7b6058951f1f03730340aac45c57a4ddec14c",
+      "exact_duplicate_cut_lines_removed_in_memory": 4,
+      "closed_cut_contours": 2,
+      "solid_count": 1,
+      "volume_mm3": 28206.23390999999,
+      "bounding_mm": [
+        88.89999999999999,
+        114.3,
+        3.429
+      ]
+    },
+    "WT-007_LAP_LOWER": {
+      "source": "laser/dxf-parts/WT-007_LAP_LOWER.dxf",
+      "source_sha256": "e82877b968999c997d92dffe3a161ea8076eb6b76aa2e1d053ce9688bb6d98fd",
+      "exact_duplicate_cut_lines_removed_in_memory": 0,
+      "closed_cut_contours": 1,
+      "solid_count": 1,
+      "volume_mm3": 28759.29731999999,
+      "bounding_mm": [
+        101.6,
+        88.89999999999999,
+        3.429
+      ]
+    },
+    "WT-008_LAP_UPPER": {
+      "source": "laser/dxf-parts/WT-008_LAP_UPPER.dxf",
+      "source_sha256": "2d320d1467f76b4b3d2019bda3e1e146cdf4c15c74aeefd74141bd44a221a958",
+      "exact_duplicate_cut_lines_removed_in_memory": 0,
+      "closed_cut_contours": 3,
+      "solid_count": 1,
+      "volume_mm3": 25993.980269999996,
+      "bounding_mm": [
+        101.6,
+        76.19999999999999,
+        3.429
+      ]
+    },
+    "WT-009_BUTT_A": {
+      "source": "laser/dxf-parts/WT-009_BUTT_A.dxf",
+      "source_sha256": "813bcd4c246cef5b43db57af3643b4653eae4ab4be5e017e63ce54a6ec8cc31a",
+      "exact_duplicate_cut_lines_removed_in_memory": 0,
+      "closed_cut_contours": 1,
+      "solid_count": 1,
+      "volume_mm3": 22122.536399999994,
+      "bounding_mm": [
+        127.0,
+        50.8,
+        3.429
+      ]
+    },
+    "WT-010_BUTT_B": {
+      "source": "laser/dxf-parts/WT-010_BUTT_B.dxf",
+      "source_sha256": "6e789a5593febd72f629f4f0cb8e58c9f9cf59eaa03d7cac584ab9462a2d8f31",
+      "exact_duplicate_cut_lines_removed_in_memory": 0,
+      "closed_cut_contours": 1,
+      "solid_count": 1,
+      "volume_mm3": 22122.536399999994,
+      "bounding_mm": [
+        127.0,
+        50.8,
+        3.429
+      ]
+    },
+    "WT-011_GAP_GAUGE": {
+      "source": "laser/dxf-parts/WT-011_GAP_GAUGE.dxf",
+      "source_sha256": "b4ceb4b6032763b55480feab96fb7e702656f60b58dfb4df1a6edf0c380c56a1",
+      "exact_duplicate_cut_lines_removed_in_memory": 0,
+      "closed_cut_contours": 1,
+      "solid_count": 1,
+      "volume_mm3": 6636.760919999999,
+      "bounding_mm": [
+        76.19999999999999,
+        25.4,
+        3.429
+      ]
+    },
+    "WT-012_SLOT_COUPON": {
+      "source": "laser/dxf-parts/WT-012_SLOT_COUPON.dxf",
+      "source_sha256": "344730b96c07df1ed3e568ebf0ef95c542c82a6ded09f0c0314b81ecc98c93ea",
+      "exact_duplicate_cut_lines_removed_in_memory": 0,
+      "closed_cut_contours": 5,
+      "solid_count": 1,
+      "volume_mm3": 12229.338121919993,
+      "bounding_mm": [
+        101.6,
+        38.099999999999994,
+        3.429
+      ]
+    }
+  },
+  "assembly": {
+    "filename": "cad/assembly/LXD_10GA_MIG_WELD_TEST_ASSEMBLY.step",
+    "intended_components": [
+      "WT-001_BASE",
+      "WT-002_SPINE",
+      "WT-003_CROSS",
+      "WT-004_VERTICAL",
+      "WT-005_CORNER_A",
+      "WT-006_CORNER_B",
+      "WT-007_LAP_LOWER",
+      "WT-008_LAP_UPPER",
+      "WT-009_BUTT_A",
+      "WT-010_BUTT_B"
+    ],
+    "component_count": 10,
+    "placed_component_summaries": {
+      "WT-001_BASE": {
+        "solid_count": 1,
+        "face_count": 46,
+        "volume_mm3": 306615.3689773433,
+        "bounding_mm": [
+          304.79999999999995,
+          304.79999999999995,
+          3.429
+        ],
+        "valid": true
+      },
+      "WT-002_SPINE": {
+        "solid_count": 1,
+        "face_count": 22,
+        "volume_mm3": 91144.849968,
+        "bounding_mm": [
+          254.0,
+          3.429000000000002,
+          114.3
+        ],
+        "valid": true
+      },
+      "WT-003_CROSS": {
+        "solid_count": 1,
+        "face_count": 22,
+        "volume_mm3": 91144.84996800001,
+        "bounding_mm": [
+          3.4290000000000305,
+          254.0,
+          114.3
+        ],
+        "valid": true
+      },
+      "WT-004_VERTICAL": {
+        "solid_count": 1,
+        "face_count": 10,
+        "volume_mm3": 40926.692339999994,
+        "bounding_mm": [
+          76.19999999999999,
+          3.4290000000000163,
+          165.09999999999997
+        ],
+        "valid": true
+      },
+      "WT-005_CORNER_A": {
+        "solid_count": 1,
+        "face_count": 14,
+        "volume_mm3": 26823.575385,
+        "bounding_mm": [
+          76.20000000000002,
+          3.4290000000000163,
+          114.3
+        ],
+        "valid": true
+      },
+      "WT-006_CORNER_B": {
+        "solid_count": 1,
+        "face_count": 14,
+        "volume_mm3": 28206.233909999995,
+        "bounding_mm": [
+          3.429000000000002,
+          88.9,
+          114.3
+        ],
+        "valid": true
+      },
+      "WT-007_LAP_LOWER": {
+        "solid_count": 1,
+        "face_count": 14,
+        "volume_mm3": 28759.297319999994,
+        "bounding_mm": [
+          101.6,
+          3.429000000000002,
+          88.89999999999999
+        ],
+        "valid": true
+      },
+      "WT-008_LAP_UPPER": {
+        "solid_count": 1,
+        "face_count": 14,
+        "volume_mm3": 25993.980269999996,
+        "bounding_mm": [
+          101.6,
+          3.429000000000002,
+          76.19999999999999
+        ],
+        "valid": true
+      },
+      "WT-009_BUTT_A": {
+        "solid_count": 1,
+        "face_count": 6,
+        "volume_mm3": 22122.536399999994,
+        "bounding_mm": [
+          127.0,
+          50.8,
+          3.429
+        ],
+        "valid": true
+      },
+      "WT-010_BUTT_B": {
+        "solid_count": 1,
+        "face_count": 6,
+        "volume_mm3": 22122.536399999994,
+        "bounding_mm": [
+          127.0,
+          50.8,
+          3.429
+        ],
+        "valid": true
+      }
+    },
+    "placement_basis": [
+      "Controlled Rev A assembly sequence",
+      "WT-001 etched station labels",
+      "1.00 inch documented lap overlap",
+      "0.045 inch documented butt root opening"
+    ]
+  },
+  "warnings": [
+    "The controlled package provides a concept view and assembly sequence but no dimensioned assembly-coordinate drawing. Placement follows the etched stations and stated fit-up values.",
+    "WT-006 contains four exact duplicate coincident CUT lines. They are removed only in the temporary import copy.",
+    "Revision A remains a prototype subject to slot-coupon and complete physical dry-assembly verification."
+  ]
+}

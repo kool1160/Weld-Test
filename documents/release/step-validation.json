@@ -1,0 +1,384 @@
+{
+  "cad_software": "CadQuery 2.8.0",
+  "cad_kernel": "OpenCascade 7.9.3.1",
+  "export_protocol": "AP214",
+  "parts": {
+    "WT-001_BASE": {
+      "filename": "cad/parts/WT-001_BASE.step",
+      "sha256": "567b8d32be0c4d25eb6d8b63f1bf96799ac539ece6872886712bd413faa0bd0d",
+      "protocol": "AP214",
+      "solid_body_count": 1,
+      "face_count": 46,
+      "bounding_mm": [
+        304.8,
+        304.8,
+        3.429
+      ],
+      "bounding_in": [
+        12.000000000000002,
+        12.000000000000002,
+        0.135
+      ],
+      "thickness_in": 0.135,
+      "volume_mm3": 306615.36897734355,
+      "imports_without_error": true,
+      "topology_valid": true,
+      "all_faces_valid": true,
+      "no_mesh_entities": true,
+      "no_zero_volume_bodies": true,
+      "exactly_one_intended_solid": true,
+      "thickness_matches": true,
+      "reopen_result": "PASS"
+    },
+    "WT-002_SPINE": {
+      "filename": "cad/parts/WT-002_SPINE.step",
+      "sha256": "382829099f1ae59ab47236b76ab173ffd2c5f32291c847182cbc6f102da7a9a0",
+      "protocol": "AP214",
+      "solid_body_count": 1,
+      "face_count": 22,
+      "bounding_mm": [
+        254.0,
+        114.3,
+        3.429
+      ],
+      "bounding_in": [
+        10.0,
+        4.5,
+        0.135
+      ],
+      "thickness_in": 0.135,
+      "volume_mm3": 91144.84996799998,
+      "imports_without_error": true,
+      "topology_valid": true,
+      "all_faces_valid": true,
+      "no_mesh_entities": true,
+      "no_zero_volume_bodies": true,
+      "exactly_one_intended_solid": true,
+      "thickness_matches": true,
+      "reopen_result": "PASS"
+    },
+    "WT-003_CROSS": {
+      "filename": "cad/parts/WT-003_CROSS.step",
+      "sha256": "46106a086c743e4dde39c65e3985728845274404dc15f9def852e90a41627a2f",
+      "protocol": "AP214",
+      "solid_body_count": 1,
+      "face_count": 22,
+      "bounding_mm": [
+        254.0,
+        114.3,
+        3.429
+      ],
+      "bounding_in": [
+        10.0,
+        4.5,
+        0.135
+      ],
+      "thickness_in": 0.135,
+      "volume_mm3": 91144.849968,
+      "imports_without_error": true,
+      "topology_valid": true,
+      "all_faces_valid": true,
+      "no_mesh_entities": true,
+      "no_zero_volume_bodies": true,
+      "exactly_one_intended_solid": true,
+      "thickness_matches": true,
+      "reopen_result": "PASS"
+    },
+    "WT-004_VERTICAL": {
+      "filename": "cad/parts/WT-004_VERTICAL.step",
+      "sha256": "f26f62b7a515810286728b74b2f884cd2471aec3d1b6f4dce1420f0cd162d56d",
+      "protocol": "AP214",
+      "solid_body_count": 1,
+      "face_count": 10,
+      "bounding_mm": [
+        76.2,
+        165.1,
+        3.429
+      ],
+      "bounding_in": [
+        3.0000000000000004,
+        6.5,
+        0.135
+      ],
+      "thickness_in": 0.135,
+      "volume_mm3": 40926.69234000001,
+      "imports_without_error": true,
+      "topology_valid": true,
+      "all_faces_valid": true,
+      "no_mesh_entities": true,
+      "no_zero_volume_bodies": true,
+      "exactly_one_intended_solid": true,
+      "thickness_matches": true,
+      "reopen_result": "PASS"
+    },
+    "WT-005_CORNER_A": {
+      "filename": "cad/parts/WT-005_CORNER_A.step",
+      "sha256": "65d2815e9e984bed3e9ff9596fdc3dad9a38a8e6d126fcd84e812b225080e375",
+      "protocol": "AP214",
+      "solid_body_count": 1,
+      "face_count": 14,
+      "bounding_mm": [
+        76.2,
+        114.3,
+        3.429
+      ],
+      "bounding_in": [
+        3.0000000000000004,
+        4.5,
+        0.135
+      ],
+      "thickness_in": 0.135,
+      "volume_mm3": 26823.575384999993,
+      "imports_without_error": true,
+      "topology_valid": true,
+      "all_faces_valid": true,
+      "no_mesh_entities": true,
+      "no_zero_volume_bodies": true,
+      "exactly_one_intended_solid": true,
+      "thickness_matches": true,
+      "reopen_result": "PASS"
+    },
+    "WT-006_CORNER_B": {
+      "filename": "cad/parts/WT-006_CORNER_B.step",
+      "sha256": "ffc6c0342996c111fdd1304d4ec88935fda45e279bb1774fc7461205a4cc8a2f",
+      "protocol": "AP214",
+      "solid_body_count": 1,
+      "face_count": 14,
+      "bounding_mm": [
+        88.9,
+        114.3,
+        3.429
+      ],
+      "bounding_in": [
+        3.5000000000000004,
+        4.5,
+        0.135
+      ],
+      "thickness_in": 0.135,
+      "volume_mm3": 28206.233910000003,
+      "imports_without_error": true,
+      "topology_valid": true,
+      "all_faces_valid": true,
+      "no_mesh_entities": true,
+      "no_zero_volume_bodies": true,
+      "exactly_one_intended_solid": true,
+      "thickness_matches": true,
+      "reopen_result": "PASS"
+    },
+    "WT-007_LAP_LOWER": {
+      "filename": "cad/parts/WT-007_LAP_LOWER.step",
+      "sha256": "7a1f59bf1fececd67fbe008321acc2ab199183cb5437ebacf0ccc082f4135fc7",
+      "protocol": "AP214",
+      "solid_body_count": 1,
+      "face_count": 14,
+      "bounding_mm": [
+        101.6,
+        88.9,
+        3.429
+      ],
+      "bounding_in": [
+        4.0,
+        3.5000000000000004,
+        0.135
+      ],
+      "thickness_in": 0.135,
+      "volume_mm3": 28759.297319999998,
+      "imports_without_error": true,
+      "topology_valid": true,
+      "all_faces_valid": true,
+      "no_mesh_entities": true,
+      "no_zero_volume_bodies": true,
+      "exactly_one_intended_solid": true,
+      "thickness_matches": true,
+      "reopen_result": "PASS"
+    },
+    "WT-008_LAP_UPPER": {
+      "filename": "cad/parts/WT-008_LAP_UPPER.step",
+      "sha256": "4e39deea118f1980002c44a958683db697894a4dd06559e5650fed2f89920afa",
+      "protocol": "AP214",
+      "solid_body_count": 1,
+      "face_count": 14,
+      "bounding_mm": [
+        101.6,
+        76.2,
+        3.429
+      ],
+      "bounding_in": [
+        4.0,
+        3.0000000000000004,
+        0.135
+      ],
+      "thickness_in": 0.135,
+      "volume_mm3": 25993.980270000004,
+      "imports_without_error": true,
+      "topology_valid": true,
+      "all_faces_valid": true,
+      "no_mesh_entities": true,
+      "no_zero_volume_bodies": true,
+      "exactly_one_intended_solid": true,
+      "thickness_matches": true,
+      "reopen_result": "PASS"
+    },
+    "WT-009_BUTT_A": {
+      "filename": "cad/parts/WT-009_BUTT_A.step",
+      "sha256": "46d647c3e0ac125dc8476f59e5cb299e2d9448825c9ce6eaf881a825f894cc4c",
+      "protocol": "AP214",
+      "solid_body_count": 1,
+      "face_count": 6,
+      "bounding_mm": [
+        127.0,
+        50.8,
+        3.429
+      ],
+      "bounding_in": [
+        5.0,
+        2.0,
+        0.135
+      ],
+      "thickness_in": 0.135,
+      "volume_mm3": 22122.536399999994,
+      "imports_without_error": true,
+      "topology_valid": true,
+      "all_faces_valid": true,
+      "no_mesh_entities": true,
+      "no_zero_volume_bodies": true,
+      "exactly_one_intended_solid": true,
+      "thickness_matches": true,
+      "reopen_result": "PASS"
+    },
+    "WT-010_BUTT_B": {
+      "filename": "cad/parts/WT-010_BUTT_B.step",
+      "sha256": "d96f2aa741c4f12b437cdc2034fd809e29f218d6e0a8c6c06ff3c89ccda14efa",
+      "protocol": "AP214",
+      "solid_body_count": 1,
+      "face_count": 6,
+      "bounding_mm": [
+        127.0,
+        50.8,
+        3.429
+      ],
+      "bounding_in": [
+        5.0,
+        2.0,
+        0.135
+      ],
+      "thickness_in": 0.135,
+      "volume_mm3": 22122.536399999994,
+      "imports_without_error": true,
+      "topology_valid": true,
+      "all_faces_valid": true,
+      "no_mesh_entities": true,
+      "no_zero_volume_bodies": true,
+      "exactly_one_intended_solid": true,
+      "thickness_matches": true,
+      "reopen_result": "PASS"
+    },
+    "WT-011_GAP_GAUGE": {
+      "filename": "cad/parts/WT-011_GAP_GAUGE.step",
+      "sha256": "9d999484081216147106778b4fcda3d589172cdddb76216a0b0cf14200fd8e5d",
+      "protocol": "AP214",
+      "solid_body_count": 1,
+      "face_count": 6,
+      "bounding_mm": [
+        76.2,
+        25.4,
+        3.429
+      ],
+      "bounding_in": [
+        3.0000000000000004,
+        1.0,
+        0.135
+      ],
+      "thickness_in": 0.135,
+      "volume_mm3": 6636.760919999999,
+      "imports_without_error": true,
+      "topology_valid": true,
+      "all_faces_valid": true,
+      "no_mesh_entities": true,
+      "no_zero_volume_bodies": true,
+      "exactly_one_intended_solid": true,
+      "thickness_matches": true,
+      "reopen_result": "PASS"
+    },
+    "WT-012_SLOT_COUPON": {
+      "filename": "cad/parts/WT-012_SLOT_COUPON.step",
+      "sha256": "a477902940ffb0fdaa57901d5c088259e0d528b82eb5455e4590c6546052d844",
+      "protocol": "AP214",
+      "solid_body_count": 1,
+      "face_count": 22,
+      "bounding_mm": [
+        101.6,
+        38.1,
+        3.429
+      ],
+      "bounding_in": [
+        4.0,
+        1.5000000000000002,
+        0.135
+      ],
+      "thickness_in": 0.135,
+      "volume_mm3": 12229.338121919995,
+      "imports_without_error": true,
+      "topology_valid": true,
+      "all_faces_valid": true,
+      "no_mesh_entities": true,
+      "no_zero_volume_bodies": true,
+      "exactly_one_intended_solid": true,
+      "thickness_matches": true,
+      "reopen_result": "PASS"
+    }
+  },
+  "assembly": {
+    "filename": "cad/assembly/LXD_10GA_MIG_WELD_TEST_ASSEMBLY.step",
+    "sha256": "44bf35afaf9fcb0a363d1203ee4d1cae7deecc23b551c9fd598a3aba8e214cc6",
+    "protocol": "AP214",
+    "solid_body_count": 10,
+    "intended_component_count": 10,
+    "intended_components": [
+      "WT-001_BASE",
+      "WT-002_SPINE",
+      "WT-003_CROSS",
+      "WT-004_VERTICAL",
+      "WT-005_CORNER_A",
+      "WT-006_CORNER_B",
+      "WT-007_LAP_LOWER",
+      "WT-008_LAP_UPPER",
+      "WT-009_BUTT_A",
+      "WT-010_BUTT_B"
+    ],
+    "product_names": [
+      "LXD_10GA_MIG_WELD_TEST_ASSEMBLY",
+      "WT-001_BASE",
+      "WT-002_SPINE",
+      "WT-003_CROSS",
+      "WT-004_VERTICAL",
+      "WT-005_CORNER_A",
+      "WT-006_CORNER_B",
+      "WT-007_LAP_LOWER",
+      "WT-008_LAP_UPPER",
+      "WT-009_BUTT_A",
+      "WT-010_BUTT_B"
+    ],
+    "all_intended_names_present": true,
+    "component_volumes_match_individual_steps": true,
+    "face_count": 168,
+    "bounding_mm": [
+      457.2,
+      304.8,
+      165.10000000000002
+    ],
+    "bounding_in": [
+      18.0,
+      12.000000000000002,
+      6.500000000000001
+    ],
+    "imports_without_error": true,
+    "topology_valid": true,
+    "all_faces_valid": true,
+    "no_mesh_entities": true,
+    "no_zero_volume_bodies": true,
+    "reopen_result": "PASS"
+  },
+  "overall_open_cascade_result": "PASS",
+  "solidworks_verification": "PASS - SOLIDWORKS Design Professional for Makers 2026 SP2.0 opened the AP214 assembly successfully after export and kernel validation. The imported assembly displayed all ten WT-001 through WT-010 components, with no import-error dialog or missing-component warning. The reopened document was then closed without saving a converted native copy."
+}
