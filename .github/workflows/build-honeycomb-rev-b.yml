@@ -7,6 +7,7 @@ on:
     paths:
       - tools/generate_honeycomb_rev_b.py
       - tools/run_honeycomb_rev_b_headless.py
+      - tools/validate_honeycomb_rev_b_step.py
       - .github/workflows/build-honeycomb-rev-b.yml
   pull_request:
     branches:
@@ -14,6 +15,7 @@ on:
     paths:
       - tools/generate_honeycomb_rev_b.py
       - tools/run_honeycomb_rev_b_headless.py
+      - tools/validate_honeycomb_rev_b_step.py
       - .github/workflows/build-honeycomb-rev-b.yml
   workflow_dispatch:
 
@@ -37,10 +39,15 @@ jobs:
           sudo apt-get install -y freecad
           command -v freecadcmd || command -v FreeCADCmd
 
-      - name: Generate and re-open STEP assembly
+      - name: Generate STEP assembly
         run: |
           FREECAD_CMD="$(command -v freecadcmd || command -v FreeCADCmd)"
           "$FREECAD_CMD" tools/run_honeycomb_rev_b_headless.py 2>&1 | tee freecad-build.log
+
+      - name: Re-open and validate STEP in fresh process
+        run: |
+          FREECAD_CMD="$(command -v freecadcmd || command -v FreeCADCmd)"
+          "$FREECAD_CMD" tools/validate_honeycomb_rev_b_step.py 2>&1 | tee freecad-validation.log
           echo "--- generated files ---"
           find cad documents -maxdepth 5 -type f -printf '%p %s bytes\n' | sort || true
 
@@ -54,6 +61,7 @@ jobs:
             cad/native-freecad/rev-b/
             documents/prototype-validation/
             freecad-build.log
+            freecad-validation.log
           if-no-files-found: warn
           retention-days: 30
 
