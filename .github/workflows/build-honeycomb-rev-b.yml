@@ -7,6 +7,12 @@ on:
     paths:
       - tools/generate_honeycomb_rev_b.py
       - .github/workflows/build-honeycomb-rev-b.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - tools/generate_honeycomb_rev_b.py
+      - .github/workflows/build-honeycomb-rev-b.yml
   workflow_dispatch:
 
 permissions:
@@ -20,6 +26,8 @@ jobs:
     steps:
       - name: Check out repository
         uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
 
       - name: Install FreeCAD OpenCascade kernel
         run: |
@@ -52,6 +60,7 @@ jobs:
           retention-days: 30
 
       - name: Commit generated CAD to prototype branch
+        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -60,5 +69,5 @@ jobs:
             echo "No generated-file changes to commit."
           else
             git commit -m "feat: generate validated honeycomb Rev B STEP assembly"
-            git push
+            git push origin HEAD:${{ github.head_ref || github.ref_name }}
           fi
