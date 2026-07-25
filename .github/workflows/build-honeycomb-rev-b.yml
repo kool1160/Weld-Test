@@ -6,12 +6,14 @@ on:
       - engineering/honeycomb-rev-b
     paths:
       - tools/generate_honeycomb_rev_b.py
+      - tools/run_honeycomb_rev_b_headless.py
       - .github/workflows/build-honeycomb-rev-b.yml
   pull_request:
     branches:
       - main
     paths:
       - tools/generate_honeycomb_rev_b.py
+      - tools/run_honeycomb_rev_b_headless.py
       - .github/workflows/build-honeycomb-rev-b.yml
   workflow_dispatch:
 
@@ -38,7 +40,7 @@ jobs:
       - name: Generate and re-open STEP assembly
         run: |
           FREECAD_CMD="$(command -v freecadcmd || command -v FreeCADCmd)"
-          "$FREECAD_CMD" tools/generate_honeycomb_rev_b.py 2>&1 | tee freecad-build.log
+          "$FREECAD_CMD" tools/run_honeycomb_rev_b_headless.py 2>&1 | tee freecad-build.log
           echo "--- generated files ---"
           find cad documents -maxdepth 5 -type f -printf '%p %s bytes\n' | sort || true
 
