@@ -1,0 +1,103 @@
+{
+  "status": "PASS",
+  "generator": "FreeCAD 0.19 / OpenCascade",
+  "validation_method": "Fresh FreeCADCmd process using Part.read STEP parser",
+  "step_protocol": "AP214",
+  "material": "10-ga mild steel",
+  "nominal_thickness_in": 0.1345,
+  "nominal_slot_clearance_total_in": 0.01,
+  "nominal_butt_gap_in": 0.0625,
+  "step_file": "cad/assembly/rev-b/LXD_10GA_GMAW_HONEYCOMB_REV_B_ASSEMBLY.step",
+  "native_file": "cad/native-freecad/rev-b/LXD_10GA_GMAW_HONEYCOMB_REV_B_ASSEMBLY.FCStd",
+  "step_file_size_bytes": 682292,
+  "step_sha256": "e7680e4df77fb8578db4a725950c22822fa12082ff0e840e133865af3f1a0c30",
+  "native_file_size_bytes": 42600,
+  "native_sha256": "dd5020d174a069b4f7e968dc0686a19224b85a0a34246fdd6ef376772cdf308a",
+  "source_shape_count": 8,
+  "reopened_solid_count": 8,
+  "reopened_compound_valid": true,
+  "reopened_solids": [
+    {
+      "index": 1,
+      "valid": true,
+      "volume_mm3": 97966.086,
+      "bounds_mm": {
+        "x": 203.2,
+        "y": 152.4,
+        "z": 3.416
+      }
+    },
+    {
+      "index": 2,
+      "valid": true,
+      "volume_mm3": 53519.979,
+      "bounds_mm": {
+        "x": 152.4,
+        "y": 3.416,
+        "z": 108.433
+      }
+    },
+    {
+      "index": 3,
+      "valid": true,
+      "volume_mm3": 36189.184,
+      "bounds_mm": {
+        "x": 28.71,
+        "y": 99.807,
+        "z": 108.433
+      }
+    },
+    {
+      "index": 4,
+      "valid": true,
+      "volume_mm3": 36189.184,
+      "bounds_mm": {
+        "x": 28.71,
+        "y": 99.807,
+        "z": 108.433
+      }
+    },
+    {
+      "index": 5,
+      "valid": true,
+      "volume_mm3": 35103.459,
+      "bounds_mm": {
+        "x": 3.416,
+        "y": 99.384,
+        "z": 108.433
+      }
+    },
+    {
+      "index": 6,
+      "valid": true,
+      "volume_mm3": 30311.885,
+      "bounds_mm": {
+        "x": 100.806,
+        "y": 101.6,
+        "z": 3.416
+      }
+    },
+    {
+      "index": 7,
+      "valid": true,
+      "volume_mm3": 29976.172,
+      "bounds_mm": {
+        "x": 100.806,
+        "y": 101.6,
+        "z": 3.416
+      }
+    },
+    {
+      "index": 8,
+      "valid": true,
+      "volume_mm3": 25961.859,
+      "bounds_mm": {
+        "x": 152.4,
+        "y": 50.8,
+        "z": 3.416
+      }
+    }
+  ],
+  "errors": [],
+  "solidworks_verification": "Not run in GitHub Actions. Chris must open the prototype in SolidWorks before release."
+}

@@ -1,0 +1,87 @@
+name: Build Honeycomb Rev B STEP
+
+on:
+  push:
+    branches:
+      - engineering/honeycomb-rev-b
+    paths:
+      - tools/generate_honeycomb_rev_b.py
+      - tools/run_honeycomb_rev_b_headless.py
+      - tools/validate_honeycomb_rev_b_step.py
+      - .github/workflows/build-honeycomb-rev-b.yml
+  pull_request:
+    branches:
+      - main
+    paths:
+      - tools/generate_honeycomb_rev_b.py
+      - tools/run_honeycomb_rev_b_headless.py
+      - tools/validate_honeycomb_rev_b_step.py
+      - .github/workflows/build-honeycomb-rev-b.yml
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-step:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 30
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.head_ref || github.ref_name }}
+
+      - name: Install FreeCAD OpenCascade kernel
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y freecad
+          command -v freecadcmd || command -v FreeCADCmd
+
+      - name: Generate STEP assembly
+        run: |
+          FREECAD_CMD="$(command -v freecadcmd || command -v FreeCADCmd)"
+          "$FREECAD_CMD" tools/run_honeycomb_rev_b_headless.py 2>&1 | tee freecad-build.log
+
+      - name: Re-open and validate STEP in fresh process
+        run: |
+          FREECAD_CMD="$(command -v freecadcmd || command -v FreeCADCmd)"
+          "$FREECAD_CMD" tools/validate_honeycomb_rev_b_step.py 2>&1 | tee freecad-validation.log
+          echo "--- generated files ---"
+          find cad documents -maxdepth 5 -type f -printf '%p %s bytes\n' | sort || true
+
+      - name: Upload CAD and build diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: LXD-honeycomb-rev-b-build-output
+          path: |
+            cad/assembly/rev-b/
+            cad/native-freecad/rev-b/
+            documents/prototype-validation/
+            freecad-build.log
+            freecad-validation.log
+          if-no-files-found: warn
+          retention-days: 30
+
+      - name: Verify generated files
+        run: |
+          test -s cad/assembly/rev-b/LXD_10GA_GMAW_HONEYCOMB_REV_B_ASSEMBLY.step
+          test -s cad/native-freecad/rev-b/LXD_10GA_GMAW_HONEYCOMB_REV_B_ASSEMBLY.FCStd
+          test -s documents/prototype-validation/HONEYCOMB_REV_B_STEP_VALIDATION.json
+          grep -q '"status": "PASS"' documents/prototype-validation/HONEYCOMB_REV_B_STEP_VALIDATION.json
+          ls -lh cad/assembly/rev-b cad/native-freecad/rev-b documents/prototype-validation
+
+      - name: Commit generated CAD to prototype branch
+        if: github.event_name != 'pull_request' || github.event.pull_request.head.repo.full_name == github.repository
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add cad/assembly/rev-b cad/native-freecad/rev-b documents/prototype-validation
+          if git diff --cached --quiet; then
+            echo "No generated-file changes to commit."
+          else
+            git commit -m "feat: generate validated honeycomb Rev B STEP assembly"
+            git push origin HEAD:${{ github.head_ref || github.ref_name }}
+          fi
